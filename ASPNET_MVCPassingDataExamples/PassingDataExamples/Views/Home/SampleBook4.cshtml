@@ -1,0 +1,28 @@
+﻿@model PassingDataExamples.Models.Book
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SampleBook4</title>
+</head>
+<body>
+    <h1>Passing Data using TempData Example</h1>
+
+    <div class="display-label">ID</div>
+    <div class="display-field">@Html.DisplayFor(model => model.ID)</div>
+
+    <div class="display-label">BookName</div>
+    <div class="display-field">@Html.DisplayFor(model => model.BookName)</div>
+
+    <div class="display-label">Author</div>
+    <div class="display-field">@Html.DisplayFor(model => model.Author)</div>
+
+    <div class="display-label">ISBN</div>
+    <div class="display-field">@Html.DisplayFor(model => model.ISBN)</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿@model PassingDataExamples.Models.ShowBookAndMessageViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SampleBook2</title>
+</head>
+<body>
+    <h1>Passing Data using a ViewModel Example</h1>
+
+    <div> 
+        Book Info:
+        @Html.DisplayFor(model => model.Book.BookName) by @Html.DisplayFor(model => model.Book.Author)
+    </div>
+    <div>
+        Message: @Html.DisplayFor(model => model.Message.MessageText) by @Html.DisplayFor(model => model.Message.MessageFrom)
+    </div>
+</body>
+</html>
